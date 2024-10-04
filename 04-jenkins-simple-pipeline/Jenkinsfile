@@ -1,0 +1,32 @@
+pipeline{
+    agent any
+
+    environment{
+        NUMBER = 10
+    }
+
+    stages{
+        stage('stage-1'){
+            steps{
+                echo "executing mvn clean"
+                echo "NUMBER = ${NUMBER}"
+            }
+        }
+
+        stage('stage-2'){
+            steps{
+                echo 'building docker image'
+            }
+        }
+        stage('stage-3'){
+            steps{
+                echo 'deploying docker image'
+            }
+        }
+    }
+    post{
+        always{
+            echo 'this will always execute'
+        }
+    }
+}

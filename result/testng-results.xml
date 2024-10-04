@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-02T02:44:11 GMT" name="vendor-portal" finished-at="2024-10-02T02:44:19 GMT" duration-ms="7393">
+    <groups>
+    </groups>
+    <test started-at="2024-10-02T02:44:11 GMT" name="user-sam" finished-at="2024-10-02T02:44:18 GMT" duration-ms="6272">
+      <class name="org.automation.tests.vendorportal.VendorPortalTest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@338c99c8]" started-at="2024-10-02T02:44:11 GMT" name="setDriver" finished-at="2024-10-02T02:44:13 GMT" duration-ms="1214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18a136ac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@338c99c8]" started-at="2024-10-02T02:44:13 GMT" name="setPageObjects" finished-at="2024-10-02T02:44:13 GMT" depends-on-methods="org.automation.tests.AbstractTest.setDriver" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/vendor-portal/sam.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPageObjects -->
+        <test-method signature="loginTest()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@338c99c8]" started-at="2024-10-02T02:44:13 GMT" name="loginTest" finished-at="2024-10-02T02:44:14 GMT" duration-ms="1078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="dashboardTest()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@338c99c8]" started-at="2024-10-02T02:44:14 GMT" name="dashboardTest" finished-at="2024-10-02T02:44:17 GMT" depends-on-methods="org.automation.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="2604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardTest -->
+        <test-method signature="logoutTest()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@338c99c8]" started-at="2024-10-02T02:44:17 GMT" name="logoutTest" finished-at="2024-10-02T02:44:18 GMT" depends-on-methods="org.automation.tests.vendorportal.VendorPortalTest.dashboardTest" duration-ms="1057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@338c99c8]" started-at="2024-10-02T02:44:18 GMT" name="quitDriver" finished-at="2024-10-02T02:44:18 GMT" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- org.automation.tests.vendorportal.VendorPortalTest -->
+    </test> <!-- user-sam -->
+    <test started-at="2024-10-02T02:44:11 GMT" name="user-mike" finished-at="2024-10-02T02:44:19 GMT" duration-ms="7393">
+      <class name="org.automation.tests.vendorportal.VendorPortalTest">
+        <test-method is-config="true" signature="setupConfig()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@a3d9978]" started-at="2024-10-02T02:44:11 GMT" name="setupConfig" finished-at="2024-10-02T02:44:11 GMT" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupConfig -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@a3d9978]" started-at="2024-10-02T02:44:11 GMT" name="setDriver" finished-at="2024-10-02T02:44:13 GMT" duration-ms="1209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77d67cf3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@a3d9978]" started-at="2024-10-02T02:44:13 GMT" name="setPageObjects" finished-at="2024-10-02T02:44:13 GMT" depends-on-methods="org.automation.tests.AbstractTest.setDriver" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/vendor-portal/mike.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPageObjects -->
+        <test-method signature="loginTest()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@a3d9978]" started-at="2024-10-02T02:44:13 GMT" name="loginTest" finished-at="2024-10-02T02:44:14 GMT" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="dashboardTest()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@a3d9978]" started-at="2024-10-02T02:44:14 GMT" name="dashboardTest" finished-at="2024-10-02T02:44:17 GMT" depends-on-methods="org.automation.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="2612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardTest -->
+        <test-method signature="logoutTest()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@a3d9978]" started-at="2024-10-02T02:44:17 GMT" name="logoutTest" finished-at="2024-10-02T02:44:19 GMT" depends-on-methods="org.automation.tests.vendorportal.VendorPortalTest.dashboardTest" duration-ms="2159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:org.automation.tests.vendorportal.VendorPortalTest@a3d9978]" started-at="2024-10-02T02:44:19 GMT" name="quitDriver" finished-at="2024-10-02T02:44:19 GMT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- org.automation.tests.vendorportal.VendorPortalTest -->
+    </test> <!-- user-mike -->
+  </suite> <!-- vendor-portal -->
+</testng-results>

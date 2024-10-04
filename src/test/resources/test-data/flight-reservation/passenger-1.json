@@ -1,0 +1,11 @@
+{
+  "firstName": "michael",
+  "lastName": "jackson",
+  "email": "email@email.com",
+  "password": "pass",
+  "street": "123 main street",
+  "city": "costa rica",
+  "zip": "506",
+  "passengersCount": "1",
+  "expectedPrice": "$584 USD"
+}

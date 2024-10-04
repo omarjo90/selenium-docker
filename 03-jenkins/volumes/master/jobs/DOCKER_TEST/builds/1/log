@@ -1,0 +1,11 @@
+Started by user [8mha:////4FNjf3hWsxzeYNrVr97/EZZLr3Ufbfm0on8Xga30jKsCAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4Ayclk8cPNLP6MVkNehIVrggWT4w+WwOTvhiTaZK+9nsAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifT9/F1dDAHjR2ovEAAAA[0mNODE1 in workspace C:\Users\omar\IdeaProjects\selenium-docker\03-jenkins\volumes\node\workspace\DOCKER_TEST
+[DOCKER_TEST] $ cmd /c call C:\Users\omar\AppData\Local\Temp\jenkins5807643963333932153.bat
+
+C:\Users\omar\IdeaProjects\selenium-docker\03-jenkins\volumes\node\workspace\DOCKER_TEST>docker ps 
+CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS         PORTS                                              NAMES
+ec1ac8db140c   jenkins/jenkins:lts   "/usr/bin/tini -- /u…"   4 minutes ago   Up 4 minutes   0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   03-jenkins-jenkins-1
+
+C:\Users\omar\IdeaProjects\selenium-docker\03-jenkins\volumes\node\workspace\DOCKER_TEST>exit 0 
+Finished: SUCCESS

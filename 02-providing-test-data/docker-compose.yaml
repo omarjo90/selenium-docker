@@ -1,0 +1,59 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:latest
+    ports:
+      - 4444:4444
+#      - 4442:4442
+#      - 4443:4443
+  chrome:
+    image: selenium/node-chrome:latest
+    shm_size: '2g'
+    depends_on:
+      - hub
+#    deploy:
+#      replicas: 2
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_NODE_MAX_SESSIONS=4
+      - SE_VNC_NO_PASSWORD=1
+  edge:
+    image: selenium/node-edge:latest
+    shm_size: '2g'
+    depends_on:
+      - hub
+#    deploy:
+#      replicas: 2
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_NODE_MAX_SESSIONS=4
+      - SE_VNC_NO_PASSWORD=1
+  vendor-portal:
+    image: omarjo/selenium
+    depends_on:
+      - chrome
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - THREAD_COUNT=3
+      - TEST_SUITE=vendor-portal.xml
+    volumes:
+      - ./output/vendor-portal:/home/selenium-docker/test-output
+      - ./test-data/mike.json:/home/selenium-docker/test-data/vendor-portal/mike.json
+  flight-reservation:
+    image: omarjo/selenium
+    depends_on:
+      - chrome
+    environment:
+      - BROWSER=edge
+      - HUB_HOST=hub
+      - THREAD_COUNT=4
+      - TEST_SUITE=flight-reservation.xml
+    volumes:
+      - ./output/flight-reservation:/home/selenium-docker/test-output
