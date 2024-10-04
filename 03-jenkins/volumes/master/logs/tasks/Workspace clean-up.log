@@ -1,7 +1,0 @@
-Started at Thu Oct 03 01:15:53 UTC 2024
-Checking DOCKER_TEST
-Deleting /var/jenkins_home/workspace/DOCKER_TEST on Jenkins
-Checking PIPELINE_DEMO
-Deleting /var/jenkins_home/workspace/PIPELINE_DEMO on Jenkins
-Deleting C:\Users\omar\IdeaProjects\selenium-docker\03-jenkins\volumes\node\workspace\PIPELINE_DEMO on NODE1
-Finished at Thu Oct 03 01:15:53 UTC 2024. 66ms
